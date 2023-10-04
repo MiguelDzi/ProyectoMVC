@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#main .botones{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main .botones .som{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#main .btn{
+    width: 350px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+#main .btn:hover{
+    background-color: rgb(160, 55, 17);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    z-index: 1000;
+    width: 500px;
+    height: 500px;
+	border-radius: 10px;
+	padding: 25px 20px 20px 20px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 10px rgba(63,63,63,0.5);
+}
+.modal .titulo{
+    padding: 20px;
+}
+.modal .titulo h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.modal .cont{
+    height: 100%;
+    width: 100%
+}
+.modal .forms{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	gap: 10px;
+	flex: 1;
+	margin-bottom: 20px;
+    flex-direction: column;
+}
+.modal .forms .parrafos{
+    display: flex;
+    flex-direction: column;
+}
+.modal .forms .parrafos p{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.modal .forms .parrafos p label{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.modal .forms .parrafos p input:focus-within{
+    border: solid 2px black;
+    box-shadow: 10px 5px 50px rgba(100, 150, 170, 2.0);
+  }
+.modal .forms .parrafos p input{
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+.modal .forms .parrafos p select{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+}
+.modal .forms .parrafos p select:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 10px 5px 50px rgba(100, 150, 170, 2.0);
+}
+.modal .forms .parrafos p select option{
+    background-color: #fff;
+    color: #000;
+}
+.modal .acciones {
+    padding: 1px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal .acciones button{
+    margin-left: 70px;
+    
+}
+.modal .acciones button,
+.modal .acciones [type="submit"] {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal .acciones [type="submit"]:hover,
+.modal .acciones button:hover {
+    background-color: rgb(160, 55, 17);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

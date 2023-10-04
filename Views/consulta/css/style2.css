@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    text-align: center;
+}
+
+.moda .cont {
+    height: 100%;
+    width: 100%;
+}
+
+.forms {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.parrafos {
+    display: flex;
+    flex-direction: column;
+}
+
+.parrafos p {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.parrafos p label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parrafos p input:focus-within {
+    border: solid 2px black;
+    box-shadow: 10px 5px 50px rgba(100, 150, 170, 2.0);
+}
+
+.parrafos p input {
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+
+.parrafos p select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+}
+
+.parrafos p select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 10px 5px 50px rgba(100, 150, 170, 2.0);
+}
+
+.parrafos p select option {
+    background-color: #fff;
+    color: #000;
+}
+
+.acciones {
+    padding: 1px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acciones button {
+    margin-left: 50px;
+}
+
+.acciones button,
+.acciones [type="submit"] {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.acciones [type="submit"]:hover,
+.acciones button:hover {
+    background-color: rgb(160, 55, 17);
+}

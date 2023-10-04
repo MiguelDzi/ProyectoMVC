@@ -1,0 +1,55 @@
+body, h1, h2, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: rgb(160, 55, 17);
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 3px solid #ddd;
+}
+
+table a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(160, 55, 17);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+table a:hover {
+    background-color: black;
+}
+
